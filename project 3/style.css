@@ -1,0 +1,75 @@
+body {
+    background: url(images/FAQ.jpg) no-repeat center center/cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bcg {
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 50px;
+    width: 1000px;.my-element {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+}
+.FAQ {
+    margin: 0 auto;
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.FAQ p {
+    margin: 0 auto 45px auto;
+}
+.general-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.general-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out;
+}
+.general-2.active {
+    max-height: 1000px;
+}
+.question {
+    font-size: 30px;
+}
+.plus {
+    font-size: 30px;
+    cursor: pointer;
+}
+.answer {
+    font-size: 20px;
+    width: 900px;
+    margin-bottom: 20px;
+}
+.minus {
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.line {
+    margin: 7.5px 0 45px 0;
+    height: 1px;
+    background-color: black;
+    border-radius: 200px;
+}

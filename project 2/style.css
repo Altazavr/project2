@@ -1,0 +1,66 @@
+body {
+    background: url(images/forest.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.sick-model {
+    font-size: 40px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    color: white;
+    border: 3px white solid;
+    border-radius: 15px;
+    background: transparent;
+    transition: .5s;
+}
+.sick-model:hover {
+    background-color: white;
+    color: black;
+}
+.hide-model {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .2);
+}
+.model {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    transform: translate(-50%, -50%);
+    animation-name: movement;
+    animation-duration: .4s;
+}
+.close-btn {
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+@keyframes movement {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
